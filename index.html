@@ -92,10 +92,23 @@
 </div>
 <br>
   <main id="main">
-    <section id="why-us" class="why-us">
+<style>
+  .mobile-only {
+  display: none; /* Hide by default */
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-only {
+    display: block; /* Show on screens smaller than 768px */
+  }
+}
+
+</style>
+    
+    <section id="why-us" class="why-us" class="mobile-only">
       <div class="container">
 
-        <div class="row">
+        <div class="row" >
           <div class="col-xl-4 col-lg-5" data-aos="fade-up">
             <div class="content">
               <h3>Why Choose<br>Manhaj Chelembra?</h3>
